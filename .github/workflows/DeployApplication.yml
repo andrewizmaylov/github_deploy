@@ -34,7 +34,7 @@ jobs:
             # maintenance mode
             php artisan down
             echo 'Pulling main we are'
-            git pull origin/main
+            git pull origin main
             
             composer install --no-interaction --prefer-dist --optimize-autoloader
             
