@@ -10,8 +10,8 @@ import Welcome from '@/Components/Welcome.vue';
                 Dashboard
             </h2>
         </template>
-		<div class="w-full p-6 grid place-content-center">
-			<h1 class="text-xl bg-red-200 rounded shadow">dashboard updated</h1>
+		<div class="w-full p-6 grid place-content-center bg-red-200 rounded shadow my-5">
+			<h1 class="text-2xl ">dashboard updated</h1>
 		</div>
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
