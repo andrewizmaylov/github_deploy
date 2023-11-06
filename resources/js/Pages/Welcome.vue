@@ -42,7 +42,7 @@ defineProps({
 	        </section>
 	        
 	        <section class="grid grid-cols-6 gap-4 my-5">
-		        <div class="h-20 grid place-content-center border border-gray-300 rounded hover:bg-gray-300 duration-75 cursor-pointer" v-for="i in 6" :key="i">
+		        <div class="h-20 grid place-content-center bg-indigo-500 border border-gray-300 rounded hover:bg-gray-300 duration-75 cursor-pointer" v-for="i in 6" :key="i">
 			        <h1 class="text-3xl font-medium">{{ i }}</h1>
 		        </div>
 	        </section>
@@ -51,6 +51,8 @@ defineProps({
 			        <h1 class="text-3xl font-medium">{{ i }}</h1>
 		        </div>
 	        </section>
+	        
+	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate deleniti dicta distinctio eligendi enim est labore minus numquam vitae voluptatem? Accusamus aliquid architecto debitis ducimus et ipsum iure magni perferendis.</p>
 
             <div class="mt-16">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
