@@ -27,9 +27,9 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
+          username: ${{ secrets.ROOT }}
           port: ${{ secrets.PORT }}
-          key: ${{ secrets.ED25519LARAVEL }}
+          key: ${{ secrets.ED25519 }}
           script: |
             cd /var/www/html
             
