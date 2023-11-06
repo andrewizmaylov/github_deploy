@@ -14,10 +14,10 @@ jobs:
       - name: Deploy to production
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }}
+          host: ${{ secrets.HOST3 }}
           username: ${{ secrets.ROOT }}
           port: ${{ secrets.PORT }}
-          key: ${{ secrets.ED25519 }}
+          key: ${{ secrets.LEMP3 }}
           script: |
             cd /var/www/html
             chmod +x .github/scripts/DeployScript.sh
