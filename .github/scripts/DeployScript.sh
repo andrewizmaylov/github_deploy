@@ -1,6 +1,4 @@
 #!/bin/sh
-export COMPOSER_ALLOW_SUPERUSER=1
-
 set -e
 
 echo "Deploying application ..."
@@ -11,7 +9,7 @@ echo 'Pulling main we are'
 git stash
 git pull origin main
 
-composer install --no-interaction --prefer-dist --optimize-autoloader
+COMPOSER_ALLOW_SUPERUSER=1 composer install --no-interaction --prefer-dist --optimize-autoloader
 
 npm install
 npm run build
