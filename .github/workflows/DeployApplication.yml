@@ -19,10 +19,6 @@ jobs:
         with:
           node-version: '18.x'
 
-      - name: Pull main
-        run: |
-          git pull
-
       - name: Deploy to production
         uses: appleboy/ssh-action@master
         with:
@@ -37,6 +33,8 @@ jobs:
             
             # maintenance mode
             php artisan down
+            echo 'Pulling main we are'
+            git pull origin/main
             
             composer install --no-interaction --prefer-dist --optimize-autoloader
             
