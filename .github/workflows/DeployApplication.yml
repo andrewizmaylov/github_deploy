@@ -52,7 +52,7 @@ jobs:
 
       - name: Create Database
         run: |
-          mysql -uroot -ppassword -h127.0.0.1 -e 'CREATE DATABASE IF NOT EXISTS laravel;'
+          mysql -u laravel -p 'df3raeh*23r' -h localhost -e 'CREATE DATABASE IF NOT EXISTS laravel;'
         env:
           DB_PORT: ${{ job.services.mysql.ports[3306] }}
 
