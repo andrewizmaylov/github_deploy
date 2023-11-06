@@ -28,28 +28,4 @@ jobs:
           key: ${{ secrets.ED25519 }}
           script: |
             cd /var/www/html
-            
-            echo "Application in maintenance mode"
-            
-            # maintenance mode
-            php artisan down
-            echo 'Pulling main we are'
-            git stash
-            git pull origin main
-            
-            composer install --no-interaction --prefer-dist --optimize-autoloader
-            
-            npm install
-            npm run build
-            
-            php artisan migrate --force
-            php artisan optimize
-            chmod -R 777 storage bootstrap/cache
-            
-            # Reload PHP to update opcache
-            echo "" | sudo -S service php8.1-fpm reload
-            
-            # Exit maintenance mode
-            php artisan up
-            
-            echo "Application deployed!"
+            .github/scripts/DeployScript.sh
