@@ -7,6 +7,7 @@ echo "Deploying application ..."
 php artisan down
 echo 'Pulling main we are'
 git stash
+git config pull.rebase true
 git pull origin main
 
 COMPOSER_ALLOW_SUPERUSER=1 composer install --no-interaction --prefer-dist --optimize-autoloader
