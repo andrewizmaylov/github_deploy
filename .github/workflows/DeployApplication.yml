@@ -28,4 +28,5 @@ jobs:
           key: ${{ secrets.ED25519 }}
           script: |
             cd /var/www/html
+            chmod +x .github/scripts/DeployScript.sh
             .github/scripts/DeployScript.sh
