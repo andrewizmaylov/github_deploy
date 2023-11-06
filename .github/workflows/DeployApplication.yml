@@ -13,12 +13,6 @@ jobs:
       - uses: actions/checkout@v3
         with:
           token: ${{ secrets.PAT }}
-
-#      - name: Set up Node
-#        uses: actions/setup-node@v3
-#        with:
-#          node-version: '^18.x'
-
       - name: Deploy to production
         uses: appleboy/ssh-action@master
         with:
@@ -27,7 +21,6 @@ jobs:
           port: ${{ secrets.PORT }}
           key: ${{ secrets.ED25519 }}
           script: |
-            source ~/.bashrc
             cd /var/www/html
             chmod +x .github/scripts/DeployScript.sh
             .github/scripts/DeployScript.sh

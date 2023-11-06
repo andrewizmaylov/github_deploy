@@ -31,7 +31,7 @@ defineProps({
             </div>
 	        
 	        <section class="grid grid-cols-3 gap-4 my-5">
-		        <div class="h-40 grid place-content-center border border-gray-300 rounded hover:bg-gray-300 duration-75 cursor-pointer" v-for="i in 3" :key="i">
+		        <div class="h-40 grid place-content-center bg-blue-100 border border-gray-300 rounded hover:bg-gray-300 duration-75 cursor-pointer" v-for="i in 3" :key="i">
 			        <h1 class="text-3xl font-medium">{{ i }}</h1>
 		        </div>
 	        </section>
