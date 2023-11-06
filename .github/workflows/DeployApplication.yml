@@ -10,15 +10,15 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
-    services:
-      mysql:
-        image: mysql:8.0
-        env:
-          MYSQL_ROOT_PASSWORD: 'df3raeh*23r'
-          MYSQL_DATABASE: laravel
-        ports:
-          - 3306:3306
-        options: --health-cmd="mysqladmin ping"
+#    services:
+#      mysql:
+#        image: mysql:8.0
+#        env:
+#          MYSQL_ROOT_PASSWORD: 'df3raeh*23r'
+#          MYSQL_DATABASE: laravel
+#        ports:
+#          - 3306:3306
+#        options: --health-cmd="mysqladmin ping"
 
     steps:
       - name: Checkout code
@@ -58,10 +58,10 @@ jobs:
 
       - name: Run Migrations
         run: php artisan migrate --force
-        env:
-          DB_DATABASE: laravel
-          DB_USERNAME: laravel
-          DB_PASSWORD: 'df3raeh*23r'
+#        env:
+#          DB_DATABASE: laravel
+#          DB_USERNAME: laravel
+#          DB_PASSWORD: 'df3raeh*23r'
 
       - name: Run Tests
         run: php artisan test
