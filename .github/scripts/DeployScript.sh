@@ -11,8 +11,8 @@ git pull origin main
 
 COMPOSER_ALLOW_SUPERUSER=1 composer install --no-interaction --prefer-dist --optimize-autoloader
 
-/root/.nvm/versions/node/v21.1.0/bin/npm install
-/root/.nvm/versions/node/v21.1.0/bin/npm run build
+npm install
+npm run build
 
 php artisan migrate --force
 php artisan optimize
