@@ -39,15 +39,15 @@ jobs:
             
             composer install --no-interaction --prefer-dist --optimize-autoloader
             
+            npm install
+            npm run build
+            
             php artisan migrate --force
             php artisan optimize
             chmod -R 777 storage bootstrap/cache
             
             # Reload PHP to update opcache
             echo "" | sudo -S service php8.1-fpm reload
-            
-            npm install
-            npm run build
             
             # Exit maintenance mode
             php artisan up
