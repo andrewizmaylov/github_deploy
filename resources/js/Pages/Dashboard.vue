@@ -11,7 +11,7 @@ import Welcome from '@/Components/Welcome.vue';
             </h2>
         </template>
 		<div class="w-full p-6 grid place-content-center">
-			<h1 class="text-xl">dashboard updated</h1>
+			<h1 class="text-xl bg-red-200 rounded shadow">dashboard updated</h1>
 		</div>
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
