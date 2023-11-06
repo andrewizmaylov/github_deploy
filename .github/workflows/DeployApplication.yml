@@ -50,11 +50,11 @@ jobs:
       - name: Directory Permissions
         run: chmod -R 777 storage bootstrap/cache
 
-      - name: Create Database
-        run: |
-          mysql -u laravel -p 'df3raeh*23r' -h localhost -e 'CREATE DATABASE IF NOT EXISTS laravel;'
-        env:
-          DB_PORT: ${{ job.services.mysql.ports[3306] }}
+#      - name: Create Database
+#        run: |
+#          mysql -u laravel -p 'df3raeh*23r' -h localhost -e 'CREATE DATABASE IF NOT EXISTS laravel;'
+#        env:
+#          DB_PORT: ${{ job.services.mysql.ports[3306] }}
 
       - name: Run Migrations
         run: php artisan migrate --force
