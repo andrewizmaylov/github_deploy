@@ -35,6 +35,11 @@ defineProps({
 			        <h1 class="text-3xl font-medium">{{ i }}</h1>
 		        </div>
 	        </section>
+	        <section class="grid grid-cols-5 gap-4 my-5">
+		        <div class="h-30 grid place-content-center border border-gray-300 rounded hover:bg-gray-300 duration-75 cursor-pointer" v-for="i in 5" :key="i">
+			        <h1 class="text-3xl font-medium">{{ i }}</h1>
+		        </div>
+	        </section>
 
             <div class="mt-16">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
