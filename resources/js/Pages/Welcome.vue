@@ -51,7 +51,7 @@ defineProps({
 			        <h1 class="text-3xl font-medium">{{ i }}</h1>
 		        </div>
 	        </section>
-	        
+	        <h1 class="text-3xl uppercase my-3">perfect win, yap?</h1>
 	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate deleniti dicta distinctio eligendi enim est labore minus numquam vitae voluptatem? Accusamus aliquid architecto debitis ducimus et ipsum iure magni perferendis.</p>
 
             <div class="mt-16">
