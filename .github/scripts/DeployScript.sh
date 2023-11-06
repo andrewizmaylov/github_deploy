@@ -1,4 +1,6 @@
 #!/bin/sh
+export COMPOSER_ALLOW_SUPERUSER=1
+
 set -e
 
 echo "Deploying application ..."
